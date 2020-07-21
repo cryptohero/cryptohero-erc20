@@ -4,7 +4,7 @@ import './interfaces/IERC20.sol';
 
 contract Cryptohero {
     address public issuer_address;
-    address public owner;    
+    address public owner;
     uint256 public price;
 
     constructor() public {
@@ -19,6 +19,6 @@ contract Cryptohero {
         IERC20 token = IERC20(issuer_address);
         token.transferFrom(msg.sender, owner, price);
         owner = msg.sender;
-        price = price + 1;        
+        price = price + 1;
     }
 }
