@@ -11,3 +11,6 @@ We are using [OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contrac
 rm -rf ./build
 truffle deploy --network ropsten
 truffle deploy --reset --network ropsten
+
+## How to test
+truffle exec query.js --network rinkeby
